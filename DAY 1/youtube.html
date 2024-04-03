@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,body{
+        width: 100%;
+        height: 100%;
+      }
+      .parent{
+            height: 100%;
+            width: 100%;
+            display: flex;
+
+      }
+      .sideBar{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        font-weight: 600;
+        padding: 15px;
+        font-size: 25px;
+        font-family: 'Courier New', Courier, monospace;
+        
+      }
+      .main{
+       width: 70%;
+       height: 100%;
+       background-color: red;
+
+
+      }
+      .topNav{
+        height: 15%;
+        width: 100%;
+        background-color: white;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="parent">
+        <div class="sideBar">
+            <ul style="list-style-type: none;">
+                <li>Home</li>
+                <li>Shorts</li>
+                <li>Live</li>
+                <li>Trending</li>
+                <li>Music</li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topNav">
+
+            </div>
+
+        </div>
+    </div>
+  </body>
+</html>
