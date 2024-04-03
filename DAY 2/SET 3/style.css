@@ -1,0 +1,50 @@
+*{
+    
+    margin: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100vh;
+    width: 100vw;
+}
+/* PSUEDO CLASS */
+.parent{
+    margin: 15px;
+    padding: 16px;
+  ol{
+    background-color: aqua;
+
+ }
+ul:first-child{
+    background-color: blue;
+    } 
+    
+ul:last-child{
+    background-color: gray;
+}
+ul:last-child{
+    li:first-child{
+        background-color:red;
+        width: fit-content;
+    }
+    li:nth-child(2){
+        background-color:yellow;
+        width: fit-content;
+    }
+
+    
+}
+}
+
+.parent2 {
+    margin: 15px;
+    padding: 16px;
+    ul{
+        background-color: salmon;
+    }
+}
+
+
+.parent2+ul{
+    background-color: blueviolet;
+}
