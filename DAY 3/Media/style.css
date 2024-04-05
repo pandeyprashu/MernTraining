@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.parent {
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+
+  h1 {
+    height: 75px;
+    background-color: blue;
+  }
+}
+
+@media (100px <= width <= 800px) {
+  .parent {
+    background-color: brown;
+  }
+}

@@ -1,0 +1,81 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifed;
+    font-weight: 900;
+}
+.parent {
+  display: grid;
+  border: 2px solid salmon;
+  /* grid-template-columns: 50px 50px 50px; */
+  /* grid-template-columns: repeat(3,60px); */
+  grid-template-columns: 1fr 1fr 1fr; /*width between the columns */
+  /* grid-template-rows: 50px 50px 50px; width between the rows */
+  grid-auto-rows: 50px; /*newly created will also take 50px*/
+
+  column-gap: 10px;
+  row-gap: 5px;
+  background-color: aqua;
+}
+
+.child {
+  background-color: bisque;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  font-weight: 900;
+  
+  display: flex;
+  justify-content: center;
+}
+
+.child-menu {
+  grid-row-start: 2;
+  grid-row-end: 6;
+  background-color: bisque;
+  border: 2px solid black;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+ 
+ 
+  
+}
+
+.child-footer {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: bisque;
+  border: 2px solid black;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  
+}
+
+.child-main {
+  grid-row-start: 2;
+  grid-row-end: 5;
+  background-color: bisque;
+  border: 2px solid black;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+ 
+}
+
+.child-right {
+  grid-row-start: 2;
+  grid-row-end: 5;
+  background-color: bisque;
+  border: 2px solid black;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+ 
+}
+
